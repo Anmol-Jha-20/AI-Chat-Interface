@@ -1,4 +1,3 @@
-// src/components/ChatWindow.jsx
 import { useContext } from "react";
 import { ChatContext } from "../context/ChatContext.jsx";
 

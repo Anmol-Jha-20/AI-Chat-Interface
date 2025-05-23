@@ -22,7 +22,6 @@ function App() {
   const handleSend = async (text) => {
     const userMsg = addMessage(text);
 
-    // Show loading message
     const loadingMsg = {
       id: `loading-${Date.now()}`,
       sender: "assistant",
@@ -34,7 +33,6 @@ function App() {
 
     const pluginResult = await handleCommand(text);
 
-    // Replace loading with plugin result
     setMessages((prev) =>
       prev.map((msg) =>
         msg.id === loadingMsg.id

@@ -83,9 +83,6 @@ export default function PluginCard({ pluginName, pluginData }) {
     );
   }
 
-  // return <div className="p-4 bg-gray-100 rounded">Unknown plugin</div>;
-
-  // Default fallback
   return (
     <div className="p-4 bg-gray-100 rounded">{JSON.stringify(pluginData)}</div>
   );
