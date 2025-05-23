@@ -1,6 +1,12 @@
 const calcPlugin = {
   name: "calc",
   trigger: /^\/calc\s+(.+)/i,
+  match(input) {
+    const regex =
+      /(?:what(?:'s| is)\s+)?([\d\s\+\-\*\/\.\(\)]+)\s*(?:equal\s*to)?\s*\?/i;
+    const match = input.match(regex);
+    return match ? [null, match[1]] : false;
+  },
   execute: async ([_, expression]) => {
     try {
       const result = Function('"use strict"; return (' + expression + ")")();

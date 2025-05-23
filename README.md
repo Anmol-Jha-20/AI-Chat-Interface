@@ -10,6 +10,11 @@ A sleek AI chat interface built with React that supports plugin-style tools usin
 - Clean, responsive UI with card components for each plugin
 - Persisted chat history using `localStorage`
 - Modular architecture for adding new plugins easily
+- natural language detection so users can type queries like:
+
+  -“What’s the weather in Mumbai?”
+  -“Define serendipity”
+  -“What is 25 + 10 \* 2?”
 
 ---
 

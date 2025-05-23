@@ -2,6 +2,15 @@ export const definePlugin = {
   name: "define",
   trigger: /^\/define\s+(.+)/i,
 
+  match(input) {
+    const regex = /define\s+(\w+)|what\s+is\s+the\s+meaning\s+of\s+(\w+)/i;
+    const match = input.match(regex);
+    if (match) {
+      return [null, match[1] || match[2]]; // same format as trigger match
+    }
+    return false;
+  },
+
   async execute(match) {
     const word = match[1].trim();
     const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(

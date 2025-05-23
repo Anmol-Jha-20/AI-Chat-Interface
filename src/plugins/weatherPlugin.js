@@ -4,6 +4,17 @@ export const weatherPlugin = {
   name: "weather",
   trigger: /^\/weather\s+(.+)/i,
 
+  match(input) {
+    const regex =
+      /(?:weather\s+in|what(?:'s| is)\s+the\s+weather\s+in)\s+(.+)/i;
+    const match = input.match(regex);
+    if (match) {
+      const cleanedCity = match[1].trim().replace(/[?.!]+$/, ""); // Remove trailing punctuation
+      return [null, cleanedCity];
+    }
+    return false;
+  },
+
   async execute(match) {
     const city = match[1].trim();
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(

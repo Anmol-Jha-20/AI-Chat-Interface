@@ -6,7 +6,14 @@ const plugins = [weatherPlugin, calcPlugin, definePlugin];
 
 export const handleCommand = async (input) => {
   for (const plugin of plugins) {
-    const match = input.match(plugin.trigger);
+    let match = plugin.trigger?.test(input)
+      ? input.match(plugin.trigger)
+      : null;
+
+    // If match() method exists and trigger didn't match
+    if (!match && typeof plugin.match === "function") {
+      match = plugin.match(input);
+    }
     if (match) {
       const result = await plugin.execute(match);
       return {
