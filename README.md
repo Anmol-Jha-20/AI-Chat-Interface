@@ -23,7 +23,7 @@ A sleek AI chat interface built with React that supports plugin-style tools usin
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+git clone https://github.com/your-username/ai-chat-plugins.git
 cd ai-chat-plugins
 ```
 
@@ -65,7 +65,7 @@ const samplePlugin = {
 ### 🔍 Parsing Logic
 
 1. **Input Command** (e.g., `/calc 5+3`)
-2. **`handleCommand(input)`** in `https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip`:
+2. **`handleCommand(input)`** in `https://github.com/Anmol-Jha-20/AI-Chat-Interface`:
    - Iterates through available plugins
    - Matches the `trigger` regex
    - Executes the matched plugin
@@ -86,13 +86,13 @@ const samplePlugin = {
 
 - **Command**: `/define ephemeral`
 - **Function**: Fetches the definition of a word
-- **API Used**: [Free Dictionary API](https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip)
+- **API Used**: [Free Dictionary API]
 
 ### 3. `/weather` – Weather Info
 
 - **Command**: `/weather Mumbai`
 - **Function**: Shows current weather for a city
-- **API Used**: [OpenWeatherMap API](https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip)
+- **API Used**: [OpenWeatherMap API]
   - You’ll need an API key[VITE_OPENWEATHERMAP_API_KEY]. Store it securely (e.g., `.env`)
 
 ---
@@ -103,24 +103,24 @@ const samplePlugin = {
 src/
 │
 ├── components/
-│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
-│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
-│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
-│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
-│   └── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+│   ├── ChatInput.jsx
+│   ├── ChatMessage.jsx
+│   ├── ChatWindow.jsx
+│   ├── MessageInput.jsx
+│   └── PluginCard.jsx
 │
 ├── context/
-|   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+|   ├── ChatContext.jsx
 |
 ├── plugins/
-│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
-│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
-│   ├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
-│   └── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+│   ├── calcPlugin.js
+│   ├── definePlugin.js
+│   ├── weatherPlugin.js
+│   └── pluginManager.js
 │
 |
-├── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
-└── https://github.com/Anmol-Jha-20/AI-Chat-Interface/raw/refs/heads/main/src/plugins/Interface-Chat-A-v3.5.zip
+├── App.jsx
+└── main.jsx
 ```
 
 ---
